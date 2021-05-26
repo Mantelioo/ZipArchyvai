@@ -204,6 +204,12 @@ namespace ZipArchyvai
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Labai fainas kodas");
+        }
+
         private void ShowArchive(string path)//Funkcija kuri gauna .zip archivo turini.
         {
             try

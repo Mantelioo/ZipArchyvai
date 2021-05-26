@@ -38,6 +38,7 @@
             this.Extract7z = new System.Windows.Forms.Button();
             this.Create7z = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +54,7 @@
             // TxtPath
             // 
             this.TxtPath.Location = new System.Drawing.Point(133, 11);
-            this.TxtPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtPath.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPath.Name = "TxtPath";
             this.TxtPath.ReadOnly = true;
             this.TxtPath.Size = new System.Drawing.Size(325, 22);
@@ -62,7 +63,7 @@
             // BtnBrowse
             // 
             this.BtnBrowse.Location = new System.Drawing.Point(481, 11);
-            this.BtnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnBrowse.Margin = new System.Windows.Forms.Padding(4);
             this.BtnBrowse.Name = "BtnBrowse";
             this.BtnBrowse.Size = new System.Drawing.Size(100, 33);
             this.BtnBrowse.TabIndex = 12;
@@ -85,7 +86,7 @@
             this.LstContents.FormattingEnabled = true;
             this.LstContents.ItemHeight = 16;
             this.LstContents.Location = new System.Drawing.Point(24, 81);
-            this.LstContents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LstContents.Margin = new System.Windows.Forms.Padding(4);
             this.LstContents.Name = "LstContents";
             this.LstContents.Size = new System.Drawing.Size(675, 484);
             this.LstContents.TabIndex = 14;
@@ -93,7 +94,7 @@
             // BtnZipFromFolder
             // 
             this.BtnZipFromFolder.Location = new System.Drawing.Point(24, 579);
-            this.BtnZipFromFolder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnZipFromFolder.Margin = new System.Windows.Forms.Padding(4);
             this.BtnZipFromFolder.Name = "BtnZipFromFolder";
             this.BtnZipFromFolder.Size = new System.Drawing.Size(140, 44);
             this.BtnZipFromFolder.TabIndex = 15;
@@ -104,7 +105,7 @@
             // ExtractZipToFolder
             // 
             this.ExtractZipToFolder.Location = new System.Drawing.Point(172, 579);
-            this.ExtractZipToFolder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtractZipToFolder.Margin = new System.Windows.Forms.Padding(4);
             this.ExtractZipToFolder.Name = "ExtractZipToFolder";
             this.ExtractZipToFolder.Size = new System.Drawing.Size(140, 44);
             this.ExtractZipToFolder.TabIndex = 16;
@@ -115,7 +116,7 @@
             // Extract7z
             // 
             this.Extract7z.Location = new System.Drawing.Point(560, 579);
-            this.Extract7z.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Extract7z.Margin = new System.Windows.Forms.Padding(4);
             this.Extract7z.Name = "Extract7z";
             this.Extract7z.Size = new System.Drawing.Size(140, 44);
             this.Extract7z.TabIndex = 17;
@@ -126,7 +127,7 @@
             // Create7z
             // 
             this.Create7z.Location = new System.Drawing.Point(412, 579);
-            this.Create7z.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Create7z.Margin = new System.Windows.Forms.Padding(4);
             this.Create7z.Name = "Create7z";
             this.Create7z.Size = new System.Drawing.Size(140, 44);
             this.Create7z.TabIndex = 18;
@@ -137,16 +138,27 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(24, 630);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(676, 46);
             this.progressBar1.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(84, 728);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(616, 81);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Demoi mygtukas";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 699);
+            this.ClientSize = new System.Drawing.Size(870, 855);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.Create7z);
             this.Controls.Add(this.Extract7z);
@@ -157,7 +169,7 @@
             this.Controls.Add(this.BtnBrowse);
             this.Controls.Add(this.TxtPath);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -178,6 +190,7 @@
         private System.Windows.Forms.Button Extract7z;
         private System.Windows.Forms.Button Create7z;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
